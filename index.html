@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="features.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+  	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  		  <symbol id="calendar3" viewBox="0 0 16 16">
+		    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+		    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+		  </symbol>
+		  <symbol id="geo-fill" viewBox="0 0 16 16">
+		    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+		  </symbol>
+
+  	</svg>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">DJ Sam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#albums">Projects & Albums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#experience">Event Experience</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Book Me</a>
+          </li> -->
+          
+        </ul>
+          <!-- <button class="btn btn-outline-success" >Search</button> -->
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      	<img src="pexels-edoardo-tommasini-3249760.jpg">
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Great performance</h1>
+            <!-- <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      	<img src="pexels-wolfgang-2747446.jpg">
+
+ -->
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Happy crowd</h1>
+            <!-- <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      	<img src="pexels-marc-schulte-2952834.jpg">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Experienced sounds</h1>
+            <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+
+
+   
+
+<div id="services">
+    <h1 >Services</h1>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        
+        <h2>Wedding DJ'ing</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        
+      </div>
+      <div class="feature col">
+        
+        <h2>Party DJ'ing</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        
+      </div>
+      <div class="feature col">
+        
+        <h2>Corporate Hangout DJ'ing</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+       
+      </div>
+    </div>
+</div>
+
+
+
+    <div class="container px-4 py-5" id="albums">
+    <h2 class="pb-2 border-bottom">Projects & Albums</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('pexels-marc-schulte-2952834.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Form over function</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="" alt="DJ Sam" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>London</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('pexels-edoardo-tommasini-3249760.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Atmosphere</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="" alt="DJ Sam" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Berlin</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('pexels-wolfgang-2747446.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rocket science</h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="" alt="DJ Sam" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" id="experience">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">It’ll blow your mind.</h2>
+      </div>
+      <div class="col-md-5">
+      	<img src="pexels-wolfgang-2747446.jpg" width="100%">
+        
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">See for yourself.</h2>
+        
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="pexels-wolfgang-2747446.jpg" width="100%">
+
+        
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one.</h2>
+        
+      </div>
+      <div class="col-md-5">
+        <img src="pexels-marc-schulte-2952834.jpg" width="100%">
+
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    
+    <p>&copy; 2022 DJ Sam Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
